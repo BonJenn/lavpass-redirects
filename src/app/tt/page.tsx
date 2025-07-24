@@ -12,8 +12,7 @@ export default function TikTokRedirect() {
         navigator.userAgent.includes('TikTok') ||
         navigator.userAgent.includes('tiktok') ||
         document.referrer.includes('tiktok.com') ||
-        window.location.href.includes('tiktok.com') ||
-        window.navigator.standalone === true;
+        window.location.href.includes('tiktok.com');
 
       if (isInAppBrowser) {
         // Strategy 1: Try to open in new window with different approaches
