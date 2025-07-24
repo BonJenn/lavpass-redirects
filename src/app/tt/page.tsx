@@ -80,7 +80,7 @@ export default function TikTokRedirect() {
             </li>
             <li className="flex items-start">
               <span className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-2 mt-0.5">2</span>
-              <span>Select "Open in Browser"</span>
+              <span>Select &ldquo;Open in Browser&rdquo;</span>
             </li>
             <li className="flex items-start">
               <span className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-2 mt-0.5">3</span>
@@ -89,7 +89,7 @@ export default function TikTokRedirect() {
           </ol>
           <div className="bg-gray-100 p-3 rounded text-sm">
             <p className="font-semibold mb-1">Or copy this link:</p>
-            <code className="text-blue-600 break-all">https://lavpass.app</code>
+            <code className="text-blue-600 break-all">https://apps.apple.com/app/id6744234737</code>
           </div>
         </div>
       </div>
