@@ -2,60 +2,46 @@
 
 export default function TikTokRedirect() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50 p-4">
-      <div className="max-w-md bg-white rounded-lg shadow-lg p-6 border">
-        <div className="text-center mb-6">
-          <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+      <div className="max-w-md bg-white rounded-xl shadow-xl p-8 border">
+        <div className="text-center mb-8">
+          <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg className="w-10 h-10 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
             </svg>
           </div>
-          <h1 className="text-2xl font-bold text-gray-800 mb-2">Open in Browser</h1>
-          <p className="text-gray-600">TikTok is blocking the direct link. Please follow these steps:</p>
+          
+          <h1 className="text-3xl font-bold text-gray-800 mb-4">
+            Want to find clean restrooms anywhere?
+          </h1>
+          
+          <p className="text-gray-600 text-lg mb-6">
+            Copy the link below and open it in your browser to download LavPass
+          </p>
         </div>
 
-        <div className="space-y-4 mb-6">
-          <div className="flex items-start">
-            <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">1</div>
-            <div>
-              <p className="font-semibold text-gray-800">Tap the three dots (⋯)</p>
-              <p className="text-sm text-gray-600">Look for the three dots in the top right corner of your screen</p>
-            </div>
-          </div>
-
-          <div className="flex items-start">
-            <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">2</div>
-            <div>
-              <p className="font-semibold text-gray-800">Select &ldquo;Open in Browser&rdquo;</p>
-              <p className="text-sm text-gray-600">This will open the link in your default browser</p>
-            </div>
-          </div>
-
-          <div className="flex items-start">
-            <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">3</div>
-            <div>
-              <p className="font-semibold text-gray-800">Download the app</p>
-              <p className="text-sm text-gray-600">The App Store will open automatically in your browser</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-gray-100 rounded-lg p-4 mb-4">
-          <p className="text-sm text-gray-700 mb-2">Or copy this link and paste it in your browser:</p>
-          <div className="bg-white p-3 rounded border">
-            <code className="text-blue-600 break-all text-sm">https://LavPass.app</code>
+        <div className="bg-gray-50 rounded-lg p-4 mb-6">
+          <p className="text-sm text-gray-600 mb-2">Copy this link:</p>
+          <div className="bg-white p-4 rounded border-2 border-blue-200">
+            <code className="text-blue-600 text-xl font-mono font-bold">LavPass.app</code>
           </div>
         </div>
 
         <button 
           onClick={() => {
-            navigator.clipboard.writeText('https://apps.apple.com/app/id6744234737');
-            alert('Link copied to clipboard!');
+            navigator.clipboard.writeText('LavPass.app');
+            alert('Link copied! Now open your browser and paste it.');
           }}
-          className="w-full bg-blue-500 text-white py-3 px-4 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+          className="w-full bg-blue-500 text-white py-4 px-6 rounded-lg hover:bg-blue-600 transition-colors font-semibold text-lg shadow-lg"
         >
-          Copy Link to Clipboard
+          Copy Link
         </button>
+
+        <div className="mt-6 text-center">
+          <p className="text-sm text-gray-500">
+            Then open Safari, Chrome, or your preferred browser and paste the link
+          </p>
+        </div>
       </div>
     </div>
   );
